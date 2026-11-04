@@ -1,0 +1,22 @@
+{
+  "name": "@local/forgetme",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["index.js", "cordis.patch.yml", "locale/*.json", "icon.svg"],
+  "dependencies": {
+    "@deepseek-ai/schemastery": "~3.18.5",
+    "@xenova/transformers": "^2.17.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["sharp"]
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  }
+}

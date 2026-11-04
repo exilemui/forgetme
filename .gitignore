@@ -1,0 +1,5 @@
+# 记忆数据属于本地隐私，永不提交到 GitHub
+rememberme/
+.forgetme/
+node_modules/
+*.log
